@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mustafa Berke Imamoglu's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Portfolio</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="profile-image-container">
+                <img src="profile-picture.jpg" alt="Profile Picture" class="profile-image" onerror="this.style.display='none'; this.parentElement.classList.add('no-image')">
+                <div class="profile-placeholder">👤</div>
+            </div>
+            <h1 class="hero-title">Unity Game Developer</h1>
+            <p class="hero-subtitle">Creating immersive gaming experiences</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a 4th-year Computer Engineering student at TOBB ETU with a passion for bringing
+                        game ideas to life through code. Over the past 2.5 years, I've been actively developing
+                        games and have gained over a year of professional experience working in the gaming
+                        industry while pursuing my degree.
+                    </p>
+                    <p>
+                        I specialize in Unity (3+ years) and Unreal Engine (2+ years), with strong programming
+                        skills in C# and C++. My experience spans creating gameplay systems for puzzle and
+                        platformer games, and I'm currently working on a multiplayer horror game in Unity,
+                        diving deep into networking and real-time multiplayer mechanics.
+                    </p>
+                    <p>
+                        Game jams represent an exciting new chapter for me. I'm here to expand my network,
+                        collaborate with talented developers and artists, learn from different workflows,
+                        and challenge myself to grow as a programmer. I'm eager to see how others approach
+                        problems, share knowledge, and contribute solid, efficient code to create something
+                        memorable together.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3>3+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>10+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>2</h3>
+                            <p>Games Published</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="info-layout">
+                <div class="info-list" id="educationList">
+                    <button type="button" class="info-item active" data-target="edu-1">
+                        <span class="info-item__title">Bachelor of Engineer in Computer Engineering</span>
+                        <span class="info-item__meta">TOBB ETU · 2019 – 2025</span>
+                    </button>
+                    <button type="button" class="info-item" data-target="edu-2">
+                        <span class="info-item__title">Unity Certified Developer</span>
+                        <span class="info-item__meta">Unity Technologies · 2023</span>
+                    </button>
+                    <button type="button" class="info-item" data-target="edu-4">
+                        <span class="info-item__title">Advanced Game Design Course</span>
+                        <span class="info-item__meta">Online Learning Platform · 2023</span>
+                    </button>
+                    <button type="button" class="info-item" data-target="edu-5">
+                        <span class="info-item__title">Unreal Engine 5 Game Development Course</span>
+                        <span class="info-item__meta">Online Learning Platform · 2024</span>
+                    </button>
+                </div>
+                <div class="info-detail" id="educationDetail">
+                    <article class="detail-card active" data-id="edu-1">
+                        <header class="detail-header">
+                            <h3>Bachelor of Science in Computer Science</h3>
+                            <span class="detail-meta">TOBB ETU · 2019 – 2025</span>
+                        </header>
+                        <p>Specialized in game development, software engineering, and computer graphics with a focus on building immersive interactive experiences.</p>
+                        <ul class="detail-list">
+                            <li>Completed advanced coursework in game engine architecture, 3D graphics programming, and AI for games.</li>
+                            <li>Capstone project: led a four-person team to ship a multiplayer co-op puzzle game in Unity within 16 weeks.</li>
+                        </ul>
+                    </article>
+                    <article class="detail-card" data-id="edu-2">
+                        <header class="detail-header">
+                            <h3>Unity Certified Developer</h3>
+                            <span class="detail-meta">Unity Technologies · 2023</span>
+                        </header>
+                        <p>Validated end-to-end Unity development skills covering gameplay systems, asset workflows, and performance optimization.</p>
+                        <ul class="detail-list">
+                            <li>Demonstrated mastery of scripting, physics, animation, and lighting pipelines through practical assessments.</li>
+                            <li>Designed a certification project featuring an optimized mobile experience with custom tooling.</li>
+                        </ul>
+                    </article>
+                    <article class="detail-card" data-id="edu-4">
+                        <header class="detail-header">
+                            <h3>Advanced Game Design Course</h3>
+                            <span class="detail-meta">Online Learning Platform · 2023</span>
+                        </header>
+                        <p>Cohort-based course exploring systems design, player psychology, and retention loops for live service titles.</p>
+                        <ul class="detail-list">
+                            <li>Authored design documentation for progression systems and monetization models.</li>
+                            <li>Conducted user testing sessions and synthesized insights to refine core loops.</li>
+                        </ul>
+                    </article>
+                    <article class="detail-card" data-id="edu-5">
+                        <header class="detail-header">
+                            <h3>Unreal Engine 5 Professional Development</h3>
+                            <span class="detail-meta">Online Learning Platform · 2024</span>
+                        </header>
+                        <p>
+                            Hands on experience with UE5's cutting edge tools and workflows in production environments.
+                        </p>
+                        <ul class="detail-list">
+                            <li>Designed and implemented gameplay systems combining Blueprint rapid prototyping with optimized C++ code.</li>
+                            <li>Leveraged UE5 features including Enhanced Input System, Gameplay Ability System, and multiplayer replication.</li>
+                            <li>Collaborated with artists to integrate assets using Nanite and Lumen for high fidelity visuals.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="info-layout">
+                <div class="info-list" id="experienceList">
+                    <button type="button" class="info-item active" data-target="exp-1">
+                        <span class="info-item__title">Junior Unity and Unreal Engine Developer</span>
+                        <span class="info-item__meta">Erik Games Software Technologies · JAN 2025 – MAY 2025</span>
+                    </button>
+                    <button type="button" class="info-item" data-target="exp-2">
+                        <span class="info-item__title">Junior Unity and Unreal Engine Developer</span>
+                        <span class="info-item__meta">Dinomore Games · SEP 2025 – Current</span>
+                    </button>
+                    <button type="button" class="info-item" data-target="exp-3">
+                        <span class="info-item__title">
+                            Mod Developer Mount & Blade II: Bannerlord
+                        </span>
+                        <span class="info-item__meta">Freelance · JUN 2022 – DEC 2022</span>
+                    </button>
+                </div>
+                <div class="info-detail" id="experienceDetail">
+                    <article class="detail-card active" data-id="exp-1">
+                        <header class="detail-header">
+                            <h3>Junior Unity and Unreal Engine Developer</h3>
+                            <span class="detail-meta">Erik Games Software Technologies · JAN 2025 – MAY 2025</span>
+                        </header>
+                        <p>Lead cross-functional teams shipping high-fidelity Unity titles across mobile and PC platforms.</p>
+                        <ul class="detail-list">
+                            <li>Architected scalable gameplay systems and asset pipelines used by 6+ team members.</li>
+                            <li>Partnered with design and art to deliver quarterly content updates with zero regressions.</li>
+                        </ul>
+                    </article>
+                    <article class="detail-card" data-id="exp-2">
+                        <header class="detail-header">
+                            <h3>Junior Unity and Unreal Engine Developer</h3>
+                            <span class="detail-meta">Dinomore Games · SEP 2025 – Current</span>
+                        </header>
+                        <p>Shipped multiple mobile titles from ideation to launch, balancing gameplay, monetization, and live ops.</p>
+                        <ul class="detail-list">
+                            <li>Implemented combat, progression, and UI systems using clean architecture principles.</li>
+                            <li>Integrated analytics, attribution, and ad networks to support data driven iterations.</li>
+                            <li>Built custom editor tools that reduced level design time by 35%.</li>
+                        </ul>
+                    </article>
+                    <article class="detail-card" data-id="exp-3">
+                        <header class="detail-header">
+                            <h3> Mod Developer Mount & Blade II: Bannerlord</h3>
+                            <span class="detail-meta">Freelance · JUN 2022 – DEC 2022</span>
+                        </header>
+                        <p>Designed and developed total overhaul modifications for Mount & Blade II: Bannerlord, transforming core gameplay systems and adding extensive new content.</p>
+                        <ul class="detail-list">
+                            <li>Created comprehensive game modifications using C# and Bannerlord's modding framework</li>
+                            <li>Redesigned gameplay mechanics, progression systems, and AI behaviors</li>
+                            <li>mplemented custom features including new faction systems, economy overhauls, and combat mechanics</li>
+                            <li>Debugged compatibility issues across game updates and other popular mods</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="info-layout">
+                <div class="info-list" id="skillsList">
+                    <button type="button" class="info-item active" data-target="skills-1">
+                        <span class="info-item__title">Unity Engine</span>
+                        <span class="info-item__meta">Gameplay · Multiplayer · Mobile · Console</span>
+                    </button>
+                    <button type="button" class="info-item" data-target="skills-2">
+                        <span class="info-item__title">Unreal Engine 5</span>
+                        <span class="info-item__meta">Gameplay · C++ · Blueprints</span>
+                    </button>
+                    <button type="button" class="info-item" data-target="skills-3">
+                        <span class="info-item__title">Programming Languages</span>
+                        <span class="info-item__meta">C# · C++</span>
+                    </button>
+                    <button type="button" class="info-item" data-target="skills-4">
+                        <span class="info-item__title">Game Development Disciplines</span>
+                        <span class="info-item__meta">Mechanics · AI · Systems</span>
+                    </button>
+                    <button type="button" class="info-item" data-target="skills-5">
+                        <span class="info-item__title">Multiplayer & Networking</span>
+                        <span class="info-item__meta">Netcode · Server Architecture · Live Service</span>
+                    </button>
+                    <button type="button" class="info-item" data-target="skills-6">
+                        <span class="info-item__title">Tools & Workflows</span>
+                        <span class="info-item__meta">Version Control · Production Tools</span>
+                    </button>
+                </div>
+                <div class="info-detail" id="skillsDetail">
+                    <article class="detail-card active" data-id="skills-1">
+                        <header class="detail-header">
+                            <h3>Unity Engine</h3>
+                            <span class="detail-meta">Gameplay · Multiplayer · Mobile · Console</span>
+                        </header>
+                        <p>3+ years of comprehensive Unity development experience, from mobile MMORPGs to console releases, specializing in multiplayer systems and gameplay programming.</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Unity 3D</span>
+                            <span class="skill-tag">Unity 2D</span>
+                            <span class="skill-tag">Netcode for GameObjects</span>
+                            <span class="skill-tag">Input System</span>
+                            <span class="skill-tag">Physics System</span>
+                            <span class="skill-tag">Animation System</span>
+                            <span class="skill-tag">Audio System</span>
+                            <span class="skill-tag">Console Development</span>
+                        </div>
+                    </article>
+                    <article class="detail-card" data-id="skills-2">
+                        <header class="detail-header">
+                            <h3>Unreal Engine 5</h3>
+                            <span class="detail-meta">Gameplay · C++ · Blueprints</span>
+                        </header>
+                        <p>2+ years of Unreal Engine experience with focus on C++ programming and gameplay systems implementation.</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Unreal C++</span>
+                            <span class="skill-tag">Blueprint Scripting</span>
+                            <span class="skill-tag">Network Replication</span>
+                            <span class="skill-tag">Enhanced Input System</span>
+                            <span class="skill-tag">Animation Blueprints</span>
+                            <span class="skill-tag">Niagara VFX</span>
+                            <span class="skill-tag">Lumen & Nanite</span>
+                        </div>
+                    </article>
+                    <article class="detail-card" data-id="skills-3">
+                        <header class="detail-header">
+                            <h3>Programming Languages</h3>
+                            <span class="detail-meta">C# · C++</span>
+                        </header>
+                        <p>Strong programming fundamentals with specialized expertise in C# and C++ for game development, from gameplay logic to performance-critical systems.</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">C#</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">Object-Oriented Programming</span>
+                            <span class="skill-tag">Design Patterns</span>
+                            <span class="skill-tag">Data Structures</span>
+                            <span class="skill-tag">Debugging</span>
+                        </div>
+                    </article>
+                    <article class="detail-card" data-id="skills-4">
+                        <header class="detail-header">
+                            <h3>Game Development Disciplines</h3>
+                            <span class="detail-meta">Gameplay · AI · Systems Design</span>
+                        </header>
+                        <p>Experience across multiple game genres including puzzle, platformer, rhythm, action, and horror games with focus on creating engaging gameplay mechanics.</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Gameplay Mechanics</span>
+                            <span class="skill-tag">AI Programming</span>
+                            <span class="skill-tag">Combat Systems</span>
+                            <span class="skill-tag">Quest Systems</span>
+                            <span class="skill-tag">Inventory Systems</span>
+                            <span class="skill-tag">Player Progression</span>
+                            <span class="skill-tag">UI/UX Implementation</span>
+                            <span class="skill-tag">Audio Integration</span>
+                        </div>
+                    </article>
+                    <article class="detail-card" data-id="skills-5">
+                        <header class="detail-header">
+                            <h3>Multiplayer & Networking</h3>
+                            <span class="detail-meta">Netcode · Server Architecture · Live Service</span>
+                        </header>
+                        <p>Specialized in multiplayer game development with experience building MMORPGs, cooperative horror games, and networked gameplay systems.</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Netcode for GameObjects</span>
+                            <span class="skill-tag">Client-Server Architecture</span>
+                            <span class="skill-tag">Network Replication</span>
+                            <span class="skill-tag">Server Authority</span>
+                            <span class="skill-tag">Multiplayer AI</span>
+                            <span class="skill-tag">Live Service Operations</span>
+                            <span class="skill-tag">Database Management</span>
+                            <span class="skill-tag">Session Management</span>
+                        </div>
+                    </article>
+                    <article class="detail-card" data-id="skills-6">
+                        <header class="detail-header">
+                            <h3>Tools & Workflows</h3>
+                            <span class="detail-meta">Version Control · Production Tools · Modding</span>
+                        </header>
+                        <p>Proficient with industry-standard tools and workflows for game development, including version control, IDEs, and production management.</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git/GitHub</span>
+                            <span class="skill-tag">Visual Studio</span>
+                            <span class="skill-tag">JetBrains Rider</span>
+                            <span class="skill-tag">Game Modding APIs</span>
+                            <span class="skill-tag">Console SDKs</span>
+                            <span class="skill-tag">Mobile Development</span>
+                            <span class="skill-tag">Profiling & Optimization</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="project-showcase">
+                <div class="info-list project-menu" id="projectsList">
+                    <button type="button" class="info-item project-preview active" data-target="proj-1">
+                        <div class="preview-media theme-adventure">
+                            <span class="preview-label">Music and Rhythm</span>
+                        </div>
+                        <div class="preview-content">
+                            <span class="info-item__title">Beat Heaven Symphony</span>
+                            <span class="info-item__meta">Console Unity</span>
+                            <div class="preview-tags">
+                                <span>Unity</span>
+                                <span>Console</span>
+                            </div>
+                        </div>
+                    </button>
+                    <button type="button" class="info-item project-preview" data-target="proj-2">
+                        <div class="preview-media theme-puzzle">
+                            <span class="preview-label">Action / Shooter</span>
+                        </div>
+                        <div class="preview-content">
+                            <span class="info-item__title">Desert Tank Chaos</span>
+                            <span class="info-item__meta">Console Unity</span>
+                            <div class="preview-tags">
+                                <span>Unity</span>
+                                <span>Console</span>
+                            </div>
+                        </div>
+                    </button>
+                    <button type="button" class="info-item project-preview" data-target="proj-3">
+                        <div class="preview-media theme-racing">
+                            <span class="preview-label">Cooperative Multiplayer Horror</span>
+                        </div>
+                        <div class="preview-content">
+                            <span class="info-item__title">Don't Trust Anyone</span>
+                            <span class="info-item__meta">PC Unity</span>
+                            <div class="preview-tags">
+                                <span>Unity</span>
+                                <span>Netcode</span>
+                            </div>
+                        </div>
+                    </button>
+                    <button type="button" class="info-item project-preview" data-target="proj-4">
+                        <div class="preview-media theme-adventure">
+                            <span class="preview-label">Mobile MMORPG</span>
+                        </div>
+                        <div class="preview-content">
+                            <span class="info-item__title">Project Fairy</span>
+                            <span class="info-item__meta">Mobile Unity</span>
+                            <div class="preview-tags">
+                                <span>Unity</span>
+                                <span>MMORPG</span>
+                                <span>Gacha</span>
+                            </div>
+                        </div>
+                    </button>
+                    <button type="button" class="info-item project-preview" data-target="proj-5">
+                        <div class="preview-media theme-puzzle">
+                            <span class="preview-label">Simulation / Management</span>
+                        </div>
+                        <div class="preview-content">
+                            <span class="info-item__title">Hotel Owner Simulator</span>
+                            <span class="info-item__meta">PC Unreal Engine</span>
+                            <div class="preview-tags">
+                                <span>Unreal Engine</span>
+                                <span>Simulation</span>
+                                <span>C++</span>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <div class="info-detail project-detail" id="projectsDetail">
+                    <article class="detail-card project-detail-card active" data-id="proj-1">
+                        <div class="detail-media theme-adventure">
+                            <span class="detail-media__label">Beat Heaven Symphony</span>
+                        </div>
+                        <div class="project-info">
+                            <p class="project-summary">In Beat Heaven Symphony, rhythm isn't just heard it's felt. Master 20 unique tracks where every beat is a challenge and every note is a step in your musical journey.</p>
+                            <ul class="detail-list project-highlights">
+                                <li>Progressive difficulty system from beginner to expert, testing precision and timing</li>
+                                <li>20 handcrafted levels with diverse musical styles and rhythm patterns.</li>
+                                <li>Tight, responsive controls that reward perfect timing and flow</li>
+                                <li>Dynamic feedback system that makes players feel the connection between input and music</li>
+                            </ul>
+                            <div class="project-meta">
+                                <div class="project-tags">
+                                    <span>Unity</span>
+                                    <span>C#</span>
+                                    <span>Timing Mechanics</span>
+                                    <span>Difficulty Progression</span>
+                                    <span>Console</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://store.playstation.com/tr-tr/product/EP5823-CUSA53563_00-BEATHEAVENSYMPEU" class="btn btn-primary" target="_blank">Game Link</a>
+                                    <a href="https://www.youtube.com/watch?v=VnO2PnmmV_k" class="btn btn-secondary" target="_blank">Game Video</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="detail-card project-detail-card" data-id="proj-2">
+                        <div class="detail-media theme-puzzle">
+                            <span class="detail-media__label">Action / Shooter</span>
+                        </div>
+                        <div class="project-info">
+                            <p class="project-summary">Players must think tactically, plan attacks carefully, and adapt strategies to survive against overwhelming odds. Heavy firepower alone won't win smart positioning and threat management are key to conquering the battlefield.</p>
+                            <ul class="detail-list project-highlights">
+                                <li>Command your powerful tank across 6 uniquely designed desert battlefields</li>
+                                <li>Face diverse enemy types: hostile tanks, aerial threats, strategic watchtowers, and infantry ambushes</li>
+                                <li>Dynamic combat requiring tactical positioning and threat prioritization</li>
+                                <li>Progressive difficulty with layered enemy AI behaviors</li>
+                            </ul>
+                            <div class="project-meta">
+                                <div class="project-tags">
+                                    <span>Unity</span>
+                                    <span>C#</span>
+                                    <span>Tank Combat</span>
+                                    <span>Enemy AI</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://store.playstation.com/tr-tr/product/EP5823-CUSA52992_00-DESERTANKCHAOSEU" class="btn btn-primary" target="_blank">Game Link</a>
+                                    <a href="https://www.youtube.com/watch?v=agEG2goV2k8" class="btn btn-secondary" target="_blank">Game Video</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="detail-card project-detail-card" data-id="proj-3">
+                        <div class="detail-media theme-racing">
+                            <span class="detail-media__label">Cooperative Multiplayer Horror</span>
+                        </div>
+                        <div class="project-info">
+                            <p class="project-summary">A cooperative horror experience where players team up to complete dangerous missions aboard an abandoned space station infested with hostile creatures. Survive together, complete objectives, and escape before the darkness consumes you.</p>
+                            <ul class="detail-list project-highlights">
+                                <li>4-player cooperative multiplayer using Netcode for GameObjects</li>
+                                <li>Quest based gameplay with dynamic objectives across the derelict station</li>
+                                <li>Intense monster encounters requiring teamwork and strategy</li>
+                                <li>Atmospheric sci-fi horror with limited resources and escalating threats</li>
+                            </ul>
+                            <div class="project-meta">
+                                <div class="project-tags">
+                                    <span>Unity</span>
+                                    <span>Netcode</span>
+                                    <span>Network Programming</span>
+                                    <span>AI Programming</span>
+                                    <span>PC</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-primary">Work in Progress</a>
+                                    <a href="https://youtu.be/8TKQ85uVAUY" class="btn btn-secondary" target="_blank">Watch Trailer</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="detail-card project-detail-card" data-id="proj-4">
+                        <div class="detail-media theme-racing">
+                            <span class="detail-media__label">Mobile MMORPG · Live Service</span>
+                        </div>
+                        <div class="project-info">
+                            <p class="project-summary">A mobile MMORPG featuring gacha mechanics, real-time combat, and persistent online world systems. Successfully launched and operated as a live service game with continuous content updates before sunset.</p>
+                            <ul class="detail-list project-highlights">
+                                <li>Implemented gacha monetization system with rarity tiers and collection mechanics</li>
+                                <li>Built real-time combat system with player actions, AI opponents, and skill rotations</li>
+                                <li>Developed comprehensive inventory management with item stats, equipment slots, and sorting</li>
+                                <li>Created player progression framework including stats, leveling, buffs/debuffs, and character customization</li>
+                                <li>Designed server-client architecture for persistent multiplayer gameplay and data synchronization</li>
+                                <li>Managed live operations including balance patches, seasonal events, and new content releases</li>
+                            </ul>
+                            <div class="project-meta">
+                                <div class="project-tags">
+                                    <span>Unity</span>
+                                    <span>C#</span>
+                                    <span>MMORPG</span>
+                                    <span>Gacha Systems</span>
+                                    <span>Network Programming</span>
+                                    <span>Live Service</span>
+                                    <span>Mobile</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-primary">Service Ended</a>
+                                    <a href="#" class="btn btn-secondary" target="_blank">Gameplay Video</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="detail-card project-detail-card" data-id="proj-5">
+                        <div class="detail-media theme-adventure">
+                            <span class="detail-media__label">Business Simulation Game</span>
+                        </div>
+                        <div class="project-info">
+                            <p class="project-summary">A hotel management simulation game where players build and manage their hospitality empire. Start with a single hotel, serve customers, upgrade facilities, and expand your business by purchasing new properties across different locations.</p>
+                            <ul class="detail-list project-highlights">
+                                <li>Developed comprehensive hotel management systems including room upgrades, facility maintenance, and staff management</li>
+                                <li>Implemented customer AI with needs-based behavior, satisfaction systems, and service requests</li>
+                                <li>Created economic simulation with revenue tracking, expense management, and investment mechanics</li>
+                                <li>Built progression system allowing players to purchase and manage multiple hotel properties</li>
+                                <li>Designed upgrade paths for rooms, amenities, and hotel services to increase profitability</li>
+                                <li>Implemented save/load system for persistent business progress and property portfolios</li>
+                            </ul>
+                            <div class="project-meta">
+                                <div class="project-tags">
+                                    <span>Unreal Engine 4</span>
+                                    <span>C++</span>
+                                    <span>Blueprints</span>
+                                    <span>Simulation</span>
+                                    <span>AI Systems</span>
+                                    <span>Management Game</span>
+                                    <span>PC</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://store.steampowered.com/app/3158480/Hotel_Owner_Simulator/" class="btn btn-primary" target="_blank">Game Link</a>
+                                    <a href="https://www.youtube.com/watch?v=ab9RAw0gFr8" class="btn btn-secondary" target="_blank">Game Video</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-subtitle">I'm always open to discussing new projects and opportunities.</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:imamoglumustafaberke@gmail.com">imamoglumustafaberke@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💼</div>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/mustafa-berke-imamoglu-01b878310/" target="_blank">linkedin.com/in/mustafa-berke-imamoglu-01b878310/</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🐱</div>
+                        <div>
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/mimamoglu" target="_blank">github.com/mimamoglu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
